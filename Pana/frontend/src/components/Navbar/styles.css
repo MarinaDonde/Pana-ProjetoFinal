@@ -4,6 +4,7 @@ div .navbar {
     display: flex;
     justify-content: space-between;
     height: 100px;
+    color: var(--cor5);
 }
 
 ul {
@@ -24,3 +25,5 @@ li {
 .language-icons li img {
     width: 30px;
 }
+
+

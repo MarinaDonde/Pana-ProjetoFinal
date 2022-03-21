@@ -14,5 +14,17 @@ img {
     width: 1000px;
     margin: 0 auto;
     padding: 40px 0;
+}
 
+h1 {
+    color: var(--cor3);
+}
+
+.fonte {
+    padding-top: 0;
+}
+
+.fonte:hover {
+    color: var(--cor3);
+    text-decoration: underline;
 }

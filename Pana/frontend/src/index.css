@@ -4,8 +4,10 @@
   --cor0: #E5E5E5;
   --cor1: #ABC4FF;
   --cor2: #709BFF;
-  --cor3: #D8F7FE;
-  --cor5: #D9E4FF;
+  --cor3: #3560E8;
+  --cor4: #fff;
+  --cor5: #00017A;
+  --cor6: #354057;
 }
 
 * {
@@ -23,4 +25,8 @@ body {
 a, a:hover {
   text-decoration: none;
   color: unset;
+}
+
+p {
+  color: var(--cor6);
 }

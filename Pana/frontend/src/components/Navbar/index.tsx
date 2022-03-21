@@ -40,16 +40,16 @@ const Navbar = () => {
           <div className="language-icons">
             <ul>
               <li>
-                <Link to="/"><img src="https://i.imgur.com/TCgzXHq.png" alt="English Icon"></img></Link>
+                <Link to="/"><img src="https://i.imgur.com/TCgzXHq.png" alt="English Icon" className="language"></img></Link>
               </li>
               <li>
-              <Link to="/"><img src="https://i.imgur.com/qie2Y6l.png" alt="Spanish Icon"></img></Link>
+              <Link to="/"><img src="https://i.imgur.com/qie2Y6l.png" alt="Spanish Icon" className="language"></img></Link>
               </li>
               <li>
-              <Link to="/"><img src="https://i.imgur.com/UsMqoqa.png" alt="French Icon"></img></Link>
+              <Link to="/"><img src="https://i.imgur.com/UsMqoqa.png" alt="French Icon" className="language"></img></Link>
               </li>
               <li>
-              <Link to="/"><img src="https://i.imgur.com/G1jmQvX.png" alt="Brazilian Icon"></img></Link>
+              <Link to="/"><img src="https://i.imgur.com/G1jmQvX.png" alt="Brazilian Icon" className="language"></img></Link>
               </li>
             </ul>
           </div>
