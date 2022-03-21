@@ -1,0 +1,21 @@
+header {
+    margin: 0;
+    background-color: var(--cor0);
+    width: 100%;
+}
+
+.container-header {
+    height: 100px;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: var(--cor0);
+}
+
+.logo img{
+    margin: 10px 0;
+    max-width:180px;
+    max-height: 90px;
+    width: auto;
+    height: auto;
+}
+

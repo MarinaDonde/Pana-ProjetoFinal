@@ -1,0 +1,26 @@
+.cultura {
+    width: 1200px;
+    margin: 0 auto; 
+    background-color: var(--cor0);
+    max-height: 250px;
+    margin-bottom: 30px;
+    border-radius: 20px 0 10px 0;
+    display: flex;
+}
+
+.img-cultura {
+    max-width:180px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+}
+
+p {
+    font-size: 0.8em;
+    text-align: justify;
+    padding: 10px;
+}
+
+h3 {
+    padding: 10px;
+}
