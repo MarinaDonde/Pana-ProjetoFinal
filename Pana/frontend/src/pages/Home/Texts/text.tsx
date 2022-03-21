@@ -1,9 +1,11 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
-const BrText = () => {
+const Text = () => {
+  const { t } = useTranslation();
   return (
       <section className="text">
-        <h1>Sobre</h1>
+        <h1>{t('Sobre')} </h1>
         <p>Refugiados recém-chegados no Brasil enfrentam problemas relacionados à saúde, alimentação, moradia, documentação, educação, trabalho digno e igualdade.</p>
         <p>A maioria dos refugiados chegam ao Brasil sem documentos. Eles encontram dificuldades em trocar a moeda nativa para o Real Brasileiro, e sem dinheiro, dependem de ajuda para conseguir moradia e alimentação digna.</p>
         <p>Os documentos são necessários para ter acesso à educação, saúde e trabalho. O idioma também é uma grande barreira para o refugiado que chega ao Brasil sem conhecimento da língua portuguesa.</p> <p>Como vimos acima, os problemas afetam o refugiado em muitos aspectos de sua vida, e por isso desejamos contribuir, informando a melhor maneira de ter acesso a diferentes serviços em um idioma que o refugiado possa entender.</p>
@@ -65,4 +67,4 @@ const BrText = () => {
   )
 }
 
-export default BrText
+export default Text

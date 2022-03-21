@@ -1,17 +1,16 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from 'pages/Home';
-import Parceiros from 'pages/Parceiros';
-import Cultura from 'pages/Cultura';
-import Contato from 'pages/Contato';
-import Navbar from 'components/Navbar';
 import Footer from 'components/Footer';
+import Navbar from 'components/Navbar';
+import Contato from 'pages/Contato';
+import Cultura from 'pages/Cultura';
+import Home from 'pages/Home';
 import Login from 'pages/Login';
+import Parceiros from 'pages/Parceiros';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -22,6 +21,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
+
     </>
   );
 }
