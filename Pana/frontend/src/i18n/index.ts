@@ -4,7 +4,7 @@ import { initReactI18next } from 'react-i18next'
 import enJson from './translations/en.json';
 import esJson from './translations/es.json';
 import frJson from './translations/fr.json';
-import ptBRJson from './translations/ptBR.json'
+import ptJson from './translations/pt.json'
 
 i18n.use(initReactI18next).init({
     fallbackLng: "pt",
@@ -15,7 +15,7 @@ i18n.use(initReactI18next).init({
         en: enJson,
         es: esJson,
         fr: frJson,
-        ptBR: ptBRJson,
+        pt: ptJson,
     },
 });
 

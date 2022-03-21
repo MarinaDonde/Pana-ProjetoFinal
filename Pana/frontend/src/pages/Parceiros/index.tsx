@@ -1,7 +1,7 @@
 import React from 'react'
-import Adus from './BrOngs/Adus'
-import Compassiva from './BrOngs/Compassiva'
-import MissaoPaz from './BrOngs/MissaoPaz'
+import Adus from './CardOng/Adus'
+import Compassiva from './CardOng/Compassiva'
+import MissaoPaz from './CardOng/MissaoPaz'
 
 const Parceiros = () => {
   return (

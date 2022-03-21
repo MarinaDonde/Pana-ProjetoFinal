@@ -3,9 +3,13 @@ import { AiOutlineFacebook } from 'react-icons/ai'
 import { FaInstagram } from 'react-icons/fa'
 import missaoPaz from '../../../img/MissaoPaz.png'
 import missaoPazMap from '../../../img/mapaMissaoPaz.png'
+import { useTranslation } from 'react-i18next';
 import './parceiros.css'
 
 const MissaoPaz = () => {
+
+    const { t } = useTranslation();
+
     return (
         <section className="ong">
             <div className="container-ong">
@@ -14,7 +18,7 @@ const MissaoPaz = () => {
                     <img className="img-ong" src={missaoPaz} alt="Logo Missão Paz" />
                 </a>
                 <p className="text">
-                    A Missão Paz é uma instituição filantrópica scalabriniana de apoio e acolhimento a imigrantes e refugiados na cidade de São Paulo, em atividade desde os anos 1930.
+                    {t('par22')}
                     <div className="social-icons-ong">
                         <ul>
                             <li><a href="https://www.facebook.com/missaopazsaopaulo/" target="_blank" rel="noopener noreferrer"><AiOutlineFacebook /></a></li>
@@ -24,7 +28,7 @@ const MissaoPaz = () => {
                 </p>
             </div>
             <div className="map-ong">
-                <h3>Como chegar:</h3>
+                <h3>{t('title9')}</h3>
                 <img className="map-img" src={missaoPazMap} alt="Logo missaoPaz" />
             </div>
         </section>

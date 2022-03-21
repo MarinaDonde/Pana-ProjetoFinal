@@ -1,8 +1,8 @@
 import React from 'react'
-import CulturaBrasileira from './Cultura_br/culturaBrasileira'
-import Economia from './Cultura_br/economia'
-import Idioma from './Cultura_br/idioma'
-import Religioes from './Cultura_br/religioes'
+import CulturaBrasileira from './CardCultura/culturaBrasileira'
+import Economia from './CardCultura/economia'
+import Idioma from './CardCultura/idioma'
+import Religioes from './CardCultura/religioes'
 import './cultura.css'
 
 

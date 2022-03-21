@@ -5,10 +5,14 @@ import { GrContact } from 'react-icons/gr';
 import { RiContactsLine } from 'react-icons/ri'
 import { Link } from 'react-router-dom';
 import Header from 'components/Header';
-
+import LanguageSwitcher from 'components/LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 import './styles.css';
 
 const Navbar = () => {
+
+  const { t } = useTranslation();
+
   return (
     <>
       <Header />
@@ -17,41 +21,28 @@ const Navbar = () => {
             <ul>
               <li>
                 <BiHome />
-                <Link to="/">HOME</Link>
+                <Link to="/"> {t('nav1')} </Link>
               </li>
               <li>
                 <BsInfoSquare />
-                <Link to="Cultura">CULTURA BRASILEIRA</Link>
+                <Link to="Cultura"> {t('nav2')}</Link>
               </li>
               <li>
                 <BsPeople />
-                <Link to="Parceiros">PARCEIROS</Link>
+                <Link to="Parceiros">{t('nav3')}</Link>
               </li>
               <li>
                 <GrContact />
-                <Link to="Contato">CONTATO</Link>
+                <Link to="Contato">{t('nav4')}</Link>
               </li>
               <li>
                 <RiContactsLine />
-                <Link to="Login">ENTRAR</Link>
+                <Link to="Login">{t('nav5')}</Link>
               </li>
             </ul>
           </div>
           <div className="language-icons">
-            <ul>
-              <li>
-                <Link to="/"><img src="https://i.imgur.com/TCgzXHq.png" alt="English Icon" className="language"></img></Link>
-              </li>
-              <li>
-              <Link to="/"><img src="https://i.imgur.com/qie2Y6l.png" alt="Spanish Icon" className="language"></img></Link>
-              </li>
-              <li>
-              <Link to="/"><img src="https://i.imgur.com/UsMqoqa.png" alt="French Icon" className="language"></img></Link>
-              </li>
-              <li>
-              <Link to="/"><img src="https://i.imgur.com/G1jmQvX.png" alt="Brazilian Icon" className="language"></img></Link>
-              </li>
-            </ul>
+            <LanguageSwitcher />
           </div>
         </nav>
     </>

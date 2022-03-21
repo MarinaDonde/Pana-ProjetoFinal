@@ -3,9 +3,13 @@ import { AiOutlineFacebook } from 'react-icons/ai'
 import { FaInstagram } from 'react-icons/fa'
 import adus from '../../../img/Adus.png'
 import adusMap from '../../../img/mapaAdus.png'
+import { useTranslation } from 'react-i18next';
 import './parceiros.css'
 
 const Adus = () => {
+
+    const { t } = useTranslation();
+
     return (
         <section className="ong">
             <div className="container-ong">
@@ -14,7 +18,7 @@ const Adus = () => {
                     <img className="img-ong" src={adus} alt="Logo Adus" />
                 </a>
                 <p className="text">
-                    O Instituto Adus é uma ONG que promove a integração de refugiados na sociedade brasileira há mais de dez anos. Nós, do Adus, sabemos que a busca por refúgio não é uma escolha. É um direito. Refugiados são pessoas em situação de risco e vulnerabilidade, que tentam recomeçar suas vidas com segurança.
+                    {t('par20')}
                     <div className="social-icons-ong">
                         <ul>
                             <li><a href="https://www.facebook.com/adusbrasil" target="_blank" rel="noopener
@@ -25,7 +29,7 @@ const Adus = () => {
                 </p>
             </div>
             <div className="map-ong">
-                <h3>Como chegar:</h3>
+                <h3>{t('title9')}</h3>
                 <img className="map-img" src={adusMap} alt="Logo Adus" />
             </div>
         </section>
