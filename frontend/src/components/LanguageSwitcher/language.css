@@ -1,0 +1,18 @@
+.language-switcher {
+    display: flex;
+    align-items: center;
+    margin-top: 15px; 
+}
+
+.language-switcher > button {
+    cursor: pointer;
+    border: none;
+    background-color: var(--cor1);
+
+}
+
+.flag {
+    width: 35px;
+    margin-right: 5px;
+}
+
