@@ -43,6 +43,7 @@
         "input04": "City",
         "input05": "Email",
         "input06": "Phone number",
-        "input07": "Message"
+        "input07": "Message",
+        "title11": "Welcome! Log in:"
     }
 }
