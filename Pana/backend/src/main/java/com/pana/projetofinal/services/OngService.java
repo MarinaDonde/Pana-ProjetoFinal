@@ -7,36 +7,36 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.pana.projetofinal.entities.Contato;
-import com.pana.projetofinal.repositories.ContatoRepository;
+import com.pana.projetofinal.entities.Ong;
+import com.pana.projetofinal.repositories.OngRepository;
 
 @Service
-public class ContatoService {
+public class OngService {
 
 	@Autowired
-	private ContatoRepository repository;
+	private OngRepository repository;
 
 	@Transactional(readOnly = true)
-	public List<Contato> findAll() {
-		List<Contato> resultado = repository.findAll();
+	public List<Ong> findAll() {
+		List<Ong> resultado = repository.findAll();
 		return resultado;
 	}
 
 	@Transactional(readOnly = true)
-	public Optional<Contato> findById(Long id) {
+	public Optional<Ong> findById(Long id) {
 		return repository.findById(id);
 	}
 
 	@Transactional(readOnly = true)
-	public Contato create(Contato contato) {
-		return repository.save(contato);
+	public Ong create(Ong ong) {
+		return repository.save(ong);
 	}
 
 	public void delete(Long id) {
 		repository.deleteById(id);
 	}
 	
-	public Contato update(Contato contato) {
-		return repository.saveAndFlush(contato);
+	public Ong update(Ong ong) {
+		return repository.saveAndFlush(ong);
 	}
 }
