@@ -19,7 +19,6 @@
 
 body {
   background-color: var(--cor1);
-  height: 100%;
 }
 
 a, a:hover {
@@ -30,3 +29,6 @@ a, a:hover {
 p {
   color: var(--cor6);
 }
+
+
+

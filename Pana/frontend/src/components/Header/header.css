@@ -19,3 +19,49 @@ header {
     height: auto;
 }
 
+@media screen and (max-width: 1000px) {
+
+    header {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container-header {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        width: 100%;
+    }
+
+    .container-header {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        width: 100%;
+    }
+
+    .container-header {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    header {
+        width: 100%;
+    }
+
+    .container-header {
+        width: 100%;
+    }
+}
+

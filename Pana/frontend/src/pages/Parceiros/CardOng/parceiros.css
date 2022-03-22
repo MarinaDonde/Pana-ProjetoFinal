@@ -43,3 +43,80 @@
     height: auto;
     margin-bottom: 30px;
 }
+
+@media screen and (max-width: 1000px) {
+
+    .ong {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .container-ong {
+        width: 100%;
+    }
+
+    .map-ong {
+        max-width: 100%;
+    }
+
+    .map-img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .ong {
+        width: 100%;
+    }
+
+    .container-ong {
+        width: 100%;
+    }
+
+    .map-ong {
+        max-width: 100%;
+    }
+
+    .map-img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .ong {
+        width: 100%;
+    }
+
+    .container-ong {
+        width: 100%;
+    }
+
+    .map-ong {
+        max-width: 100%;
+    }
+
+    .map-img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .ong {
+        width: 100%;
+    }
+
+    .container-ong {
+        width: 100%;
+    }
+
+    .map-ong {
+        max-width: 100%;
+    }
+
+    .map-img {
+        max-width: 100%;
+    }
+}

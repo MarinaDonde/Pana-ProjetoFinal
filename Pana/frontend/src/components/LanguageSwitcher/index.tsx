@@ -34,17 +34,19 @@ const LanguageSwitcher = () => {
     const { i18n } = useTranslation();
 
     return (
-        <div className="language-switcher">
-            {languageOptions.map(languageOption => (
-                <button
-                    key={languageOption.value}
-                    onClick={() => {
-                        i18n.changeLanguage(languageOption.value)
-                    }}
-                >
-                    <img className="flag" src={languageOption.flag} alt={languageOption.name} />
-                </button>
-            ))}
+        <div>
+            <div className="language-switcher">
+                {languageOptions.map(languageOption => (
+                    <button
+                        key={languageOption.value}
+                        onClick={() => {
+                            i18n.changeLanguage(languageOption.value)
+                        }}
+                    >
+                        <img className="flag" src={languageOption.flag} alt={languageOption.name} />
+                    </button>
+                ))}
+            </div>
         </div>
     )
 }

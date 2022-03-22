@@ -1,7 +1,7 @@
 .language-switcher {
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 15px; 
 }
 
 .language-switcher > button {
@@ -14,6 +14,5 @@
 .flag {
     width: 35px;
     margin-right: 5px;
-
-
 }
+
