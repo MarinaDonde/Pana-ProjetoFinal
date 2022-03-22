@@ -1,5 +1,3 @@
-import React from 'react'
-import { MdOutlineEmail,MdLockOutline } from "react-icons/md";
 import { Link } from 'react-router-dom';
 import login from '../../img/login.png';
 import { useTranslation } from 'react-i18next';
@@ -16,10 +14,8 @@ const Login = () => {
       </div>
       <div className="login-form">
         <form className="form">
-          <h1>{t('title11')}</h1> <br/>
-          <MdOutlineEmail/>
+          <h1>{t('title11')}</h1>
           <input id="user" name="user" type="email" className="form-control" placeholder="Email" ></input>
-          <MdLockOutline/>
           <input id="password" name="password" type="password" className="form-control" placeholder="Senha"></input>
           <p>Não tem conta?
             <Link to="Form">Clique aqui</Link>
