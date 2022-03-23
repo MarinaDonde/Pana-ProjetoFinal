@@ -1,4 +1,5 @@
-import api from "../api";
+import api from "../utils/api";
+
 
 export async function save(produto) {
     await api.post("/produtos/", {

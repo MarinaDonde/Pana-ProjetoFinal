@@ -1,7 +1,6 @@
-import './index.css'
 import { getProdutos, deleteProduto } from '../../service/ProdutoService'
 import { useState, useEffect } from 'react'
-import Alterar from '../Alterar'
+import Alterar from './alterar'
 
 const Cards = () => {
 
