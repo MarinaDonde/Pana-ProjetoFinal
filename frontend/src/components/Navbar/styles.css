@@ -15,6 +15,7 @@ ul {
 
 li {
     margin: 5px;
+    color: var(--cor5);
 }
 
 .navbar ul li:hover {

@@ -1,6 +1,6 @@
-import React, { useState} from 'react'
-import { HiOutlineEye,HiOutlineEyeOff } from "react-icons/hi"; 
-import { MdOutlineEmail,MdLockOutline } from "react-icons/md";
+import React, { useState } from 'react';
+import { HiOutlineEye, HiOutlineEyeOff } from "react-icons/hi";
+import { MdOutlineEmail, MdLockOutline } from "react-icons/md";
 import { Link } from 'react-router-dom';
 import login from '../../img/login.png';
 import { useTranslation } from 'react-i18next';
@@ -25,24 +25,22 @@ const Login = () => {
       <div>
         <img className="img-login" src={login} alt="login" />
       </div>
-      
+
       <div className="login-form">
         <form className="form">
-          <h1>{t('title11')}</h1> <br/>
-          <MdOutlineEmail/>
+          <h1>{t('title11')}</h1>
 
-          <input id="user" name="user" type="email" className="form-control" placeholder="Email" value={email} onChange={event => setEmail(event.target.value) } ></input>
-          <MdLockOutline/>
-
-          <input id="password" name="password" type={show ? "text" : "password"} className="form-control" placeholder="Senha" value={password} onChange={event => setPassword(event.target.value) }></input>
-
-          <div className="login-eye">
-            {show ? ( <HiOutlineEye onClick={handleClick} />) : (<HiOutlineEyeOff onClick={handleClick} />)
-
-            }
-
+          <div>
+            <MdOutlineEmail />
+            <input id="user" name="user" type="email" className="form-control" placeholder="Email" value={email} onChange={event => setEmail(event.target.value)} ></input>
           </div>
-
+          <div className="div-eye">
+            <MdLockOutline />
+            <input id="password" name="password" type={show ? "text" : "password"} className="form-control" placeholder="Senha" value={password} onChange={event => setPassword(event.target.value)}></input>
+            <div className="login-eye">
+              {show ? (<HiOutlineEye onClick={handleClick} />) : (<HiOutlineEyeOff onClick={handleClick} />)}              
+            </div>
+          </div>
 
           <p>Não tem conta?
             <Link to="Form">Clique aqui</Link>

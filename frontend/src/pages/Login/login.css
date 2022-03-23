@@ -26,13 +26,15 @@
 .form {
     display: flex;
     flex-direction: column;
+    color: var(--cor5);
 }
 
-input {
+#user, #password {
     border: none;
     padding: 10px;
     margin: 5px;
     border-radius: 8px;
+    width: 280px;
 }
 
 .btn-login {
@@ -42,6 +44,12 @@ input {
     padding: 10px 0;
     margin-top: 10px;
     color: var(--cor4);
+}
+
+.div-eye {
+    display: flex;
+    align-items: center;
+    
 }
 
 @media screen and (max-width: 1000px) {
