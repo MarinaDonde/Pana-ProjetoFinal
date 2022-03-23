@@ -1,4 +1,4 @@
-package com.pana.projetofinal.entities;
+package com.projetofinal.pana.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -99,7 +99,6 @@ public class Contato {
 
 	public void setMensagem(String mensagem) {
 		this.mensagem = mensagem;
-	}
-	
+	}	
 	
 }

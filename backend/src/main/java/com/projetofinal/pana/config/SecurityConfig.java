@@ -1,4 +1,4 @@
-package com.pana.projetofinal.config;
+package com.projetofinal.pana.config;
 
 import java.util.Arrays;
 

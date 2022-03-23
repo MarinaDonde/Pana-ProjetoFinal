@@ -1,10 +1,10 @@
-package com.pana.projetofinal;
+package com.projetofinal.pana;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ProjetofinalApplicationTests {
+class PanaApplicationTests {
 
 	@Test
 	void contextLoads() {

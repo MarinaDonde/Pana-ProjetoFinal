@@ -1,4 +1,4 @@
-package com.pana.projetofinal.services;
+package com.projetofinal.pana.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.pana.projetofinal.entities.Contato;
-import com.pana.projetofinal.repositories.ContatoRepository;
+import com.projetofinal.pana.entities.Contato;
+import com.projetofinal.pana.repositories.ContatoRepository;
 
 @Service
 public class ContatoService {

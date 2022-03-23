@@ -1,13 +1,13 @@
-package com.pana.projetofinal;
+package com.projetofinal.pana;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProjetofinalApplication {
+public class PanaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProjetofinalApplication.class, args);
+		SpringApplication.run(PanaApplication.class, args);
 	}
 
 }

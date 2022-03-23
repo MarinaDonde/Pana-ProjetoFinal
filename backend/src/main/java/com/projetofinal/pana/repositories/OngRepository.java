@@ -1,9 +1,9 @@
-package com.pana.projetofinal.repositories;
+package com.projetofinal.pana.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.pana.projetofinal.entities.Ong;
+import com.projetofinal.pana.entities.Ong;
 
 @Repository
 public interface OngRepository extends JpaRepository<Ong, Long> {

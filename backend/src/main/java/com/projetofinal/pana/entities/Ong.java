@@ -1,4 +1,4 @@
-package com.pana.projetofinal.entities;
+package com.projetofinal.pana.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -80,5 +80,5 @@ public class Ong {
 		this.mapaurl = mapaurl;
 	}
 
-	
 }
+

@@ -1,10 +1,9 @@
-package com.pana.projetofinal.controller;
+package com.projetofinal.pana.controller;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,32 +13,30 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.pana.projetofinal.entities.Contato;
-import com.pana.projetofinal.services.ContatoService;
-
+import com.projetofinal.pana.entities.Ong;
+import com.projetofinal.pana.services.OngService;
 
 @RestController
-@RequestMapping(value = "/contatos")
-@CrossOrigin(origins = "http://localhost:3000")
-public class ContatoController {
-
+@RequestMapping(value = "/ongs")
+public class OngController {
+	
 	@Autowired
-	ContatoService service;
+	OngService service;
 
 	@GetMapping
-	public List<Contato> findAll() {
+	public List<Ong> findAll() {
 		return service.findAll();
 	}
 
 	@GetMapping(value = "/{id}")
-	public Optional<Contato> findById(@PathVariable Long id) {
-		Optional<Contato> contatoId = service.findById(id);
-		return contatoId;
+	public Optional<Ong> findById(@PathVariable Long id) {
+		Optional<Ong> ongId = service.findById(id);
+		return ongId;
 	}
 
 	@PostMapping
-	public Contato create(@RequestBody Contato contato) {
-		return service.create(contato);
+	public Ong create(@RequestBody Ong ong) {
+		return service.create(ong);
 	}
 
 	@DeleteMapping(value = "/{id}")
@@ -48,7 +45,8 @@ public class ContatoController {
 	}
 	
 	@PutMapping  
-    public Contato update(@RequestBody Contato contato) {
-        return service.update(contato);
+    public Ong update(@RequestBody Ong ong) {
+        return service.update(ong);
     }
+
 }
