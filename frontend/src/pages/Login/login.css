@@ -29,6 +29,10 @@
     color: var(--cor5);
 }
 
+.title-login {
+    margin-bottom: 20px;
+}
+
 #user, #password {
     border: none;
     padding: 10px;

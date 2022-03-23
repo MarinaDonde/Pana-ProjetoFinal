@@ -28,7 +28,7 @@ const Login = () => {
 
       <div className="login-form">
         <form className="form">
-          <h1>{t('title11')}</h1>
+          <h1 className="title-login" >{t('title11')}</h1>
 
           <div>
             <MdOutlineEmail />
@@ -42,7 +42,7 @@ const Login = () => {
             </div>
           </div>
 
-          <p>Não tem conta?
+          <p>{t('par23')}
             <Link to="Form">Clique aqui</Link>
           </p>
 

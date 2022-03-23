@@ -44,6 +44,8 @@
         "input05": "Email",
         "input06": "Telefone",
         "input07": "Mensagem",
-        "title11": "Bem vindo! Faça seu login:"
+        "title11": "Bem vindo! Faça seu login:",
+        "par23": "Não tem conta? ",
+        "par24": "Clique aqui"
     }
 }

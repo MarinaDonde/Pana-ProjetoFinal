@@ -44,6 +44,8 @@
         "input05": "e-mail",
         "input06": "Téléphone",
         "input07": "Message",
-        "title11": "Bienvenue! Connexion:"
+        "title11": "Bienvenue! Connexion:",
+        "par23": "Vous n'avez pas de compte? ",
+        "par24": "Cliquez ici"
     }
 }

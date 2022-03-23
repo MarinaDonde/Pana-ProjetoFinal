@@ -44,6 +44,8 @@
         "input05": "Email",
         "input06": "Phone number",
         "input07": "Message",
-        "title11": "Welcome! Log in:"
+        "title11": "Welcome! Log in:",
+        "par23": "Haven't an acc? ",
+        "par24": "Click here"
     }
 }

@@ -44,6 +44,8 @@
         "input05": "Email",
         "input06": "Teléfono",
         "input07": "Mensaje",
-        "title11": "¡Bienvenido! Iniciar sesión:"
+        "title11": "¡Bienvenido! Iniciar sesión:",
+        "par23": "No tienes una cuenta? ",
+        "par24": "Haga clic aquí"
     }
 }
