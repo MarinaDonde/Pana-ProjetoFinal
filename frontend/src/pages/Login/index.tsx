@@ -4,7 +4,6 @@ import { MdOutlineEmail,MdLockOutline } from "react-icons/md";
 import { Link } from 'react-router-dom';
 import login from '../../img/login.png';
 import { useTranslation } from 'react-i18next';
-import { FaBeer } from 'react-icons/fa';
 import './login.css';
 
 const Login = () => {
