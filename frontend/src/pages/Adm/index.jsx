@@ -1,58 +1,53 @@
 import React from 'react'
-import Cards from './cards'
-import Formulario from './formulario'
 import { useEffect, useState } from "react";
 import api from 'utils/api';
 
 const Adm = () => {
 
-  const [contato, setContatos] = useState([]);
+  const [ong, setOngs] = useState([]);
 
   useEffect(() => {
     api
-      .get("/contatos")
+      .get("/ongs")
       .then((res) => {
-        setContatos(res.data);
+        setOngs(res.data);
         console.log(res);
       })
       .catch((error) => console.log(error));
   }, []);
 
   return (
-    <div>
-      <h1>API</h1>
-      <Formulario />
-      <Cards />
+    <>
+      <h1>Cadastrar ONG</h1>
       <div>
-        <h2>lixo</h2>
-        {contato.map((contato) => (
-          <div key={contato.id}>
+        {ong.map((ong) => (
+          <div key={ong.id}>
             <table class="table">
               <thead>
                 <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Nome</th>
-                  <th scope="col">Telefone</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">Endereço</th>
-                  <th scope="col">CPF</th>
+                  <th scope="col">Logo</th>
+                  <th scope="col">Sobre</th>
+                  <th scope="col">Facebook</th>
+                  <th scope="col">Instagram</th>
+                  <th scope="col">Mapa</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">{contato.id}</th>
-                  <td>{contato.nome} </td>
-                  <td>{contato.sobrenome}</td>
-                  <td>{contato.email}</td>
-                  <td>{contato.cidade}</td>
-                  <td>{contato.pais}</td>                 
+                  <th scope="row">{ong.id}</th>
+                  <td>{ong.logourl} </td>
+                  <td>{ong.sobre}</td>
+                  <td>{ong.fburl}</td>
+                  <td>{ong.instaurl}</td>
+                  <td>{ong.mapaurl}</td>                 
                 </tr>
               </tbody>
             </table>
           </div>
         ))}
       </div>
-    </div>
+    </>
   )
 }
 
