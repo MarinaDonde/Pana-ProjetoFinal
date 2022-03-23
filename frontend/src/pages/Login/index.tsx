@@ -29,24 +29,45 @@ const Login = () => {
       <div className="login-form">
         <form className="form">
           <h1 className="title-login" >{t('title11')}</h1>
-
           <div>
             <MdOutlineEmail />
-            <input id="user" name="user" type="email" className="form-control" placeholder="Email" value={email} onChange={event => setEmail(event.target.value)} ></input>
+            <input
+              id="user" name="user" type="email"
+              className="form-control"
+              placeholder="Email"
+              value={email}
+              onChange={event => setEmail(event.target.value)} >
+            </input>
           </div>
+
           <div className="div-eye">
             <MdLockOutline />
-            <input id="password" name="password" type={show ? "text" : "password"} className="form-control" placeholder="Senha" value={password} onChange={event => setPassword(event.target.value)}></input>
+            <input id="password" name="password"
+              type={show ? "text" : "password"}
+              className="form-control" placeholder="Senha"
+              value={password}
+              onChange={event => setPassword(event.target.value)}>
+            </input>
             <div className="login-eye">
-              {show ? (<HiOutlineEye onClick={handleClick} />) : (<HiOutlineEyeOff onClick={handleClick} />)}              
+              {show ? (<HiOutlineEye onClick={handleClick} />) : (<HiOutlineEyeOff onClick={handleClick} />)}
             </div>
           </div>
 
           <p>{t('par23')}
-            <Link to="Form">Clique aqui</Link>
+            <Link to="/">Clique aqui</Link>
           </p>
 
-          <button type="submit" className="btn-login">Entrar</button>
+          <div className="div-login">
+          <Link to="/Adm">
+            <button type="submit" className="btn-login">
+              Entrar
+            </button>
+          </Link>
+          </div>
+
+
+
+
         </form>
       </div>
     </section>

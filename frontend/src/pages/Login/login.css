@@ -41,6 +41,13 @@
     width: 280px;
 }
 
+.div-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .btn-login {
     background-color: var(--cor3);
     border: none;
@@ -48,6 +55,8 @@
     padding: 10px 0;
     margin-top: 10px;
     color: var(--cor4);
+    width: 300px;
+    cursor: pointer;
 }
 
 .div-eye {

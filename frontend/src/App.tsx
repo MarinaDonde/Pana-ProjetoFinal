@@ -1,5 +1,6 @@
 import Footer from 'components/Footer';
 import Navbar from 'components/Navbar';
+import Adm from 'pages/Adm';
 import Contato from 'pages/Contato';
 import Cultura from 'pages/Cultura';
 import Home from 'pages/Home';
@@ -18,6 +19,7 @@ function App() {
           <Route path="/Parceiros" element={<Parceiros />} />
           <Route path="/Contato" element={<Contato />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/Adm" element={<Adm />} />
         </Routes>
         <Footer />
       </BrowserRouter>
