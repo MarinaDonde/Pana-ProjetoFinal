@@ -47,7 +47,7 @@ const ListaContato = () => {
 
     return (
         <section className="section">
-            <h1>Mensagens Recebidas</h1>
+            <h1 className="section-title">Mensagens Recebidas:</h1>
             <table>
                 <thead>
                     <tr>
@@ -68,7 +68,7 @@ const ListaContato = () => {
                     <table>
                         <tbody>
                             <tr>
-                                <th scope="row">{contato.id} </th>
+                                <th>{contato.id} </th>
                                 <td>{contato.nome} </td>
                                 <td>{contato.sobrenome} </td>
                                 <td>{contato.pais} </td>
@@ -76,7 +76,7 @@ const ListaContato = () => {
                                 <td>{contato.telefone} </td>
                                 <td>{contato.email} </td>
                                 <td>{contato.mensagem} </td>
-                                <td class="btn-excluir">
+                                <td className="btn-excluir">
                                     <FaTrashAlt onClick={() => deleteContato(contato.id)} />
                                 </td>
                             </tr>

@@ -4,17 +4,22 @@
     align-items: center;
     justify-content: center;
     background-color: var(--var1);
-    margin-bottom: 40px;
+    min-height: 50vh;
+}
+
+.section-title {
+    margin-bottom: 20px;
 }
 
 table, thead {
-	max-width: 1200px;
+	width: 1200px;
 	border-collapse: collapse;
 	overflow: hidden;
     border-radius: 10px 0 10px 0;
+    margin-top: 10px;
 }
 
-th, td {
+td {
 	padding: 10px;
 	background-color: rgba(255,255,255,0.2);
 	color: var(--cor3);
@@ -25,10 +30,58 @@ th {
     color: var(--cor5);
 }
 
-td {
-    position: relative;
-}
+
 
 .btn-excluir {
     cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+
+    table, thead{
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    table, thead{
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    table, thead{
+        width: 600px;
+        margin-top: 5px;
+    }
+
+    td {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    th {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    table, thead{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    table, thead{
+        width: 100%;
+    }
+
+    td{
+        width: 100%;
+    }
 }
