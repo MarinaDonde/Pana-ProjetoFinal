@@ -77,7 +77,7 @@ const ListaContato = () => {
                                 <td>{contato.email} </td>
                                 <td>{contato.mensagem} </td>
                                 <td class="btn-excluir">
-                                    <FaTrashAlt onClick={() => deleteContato(contato.id)}/>
+                                    <FaTrashAlt onClick={() => deleteContato(contato.id)} />
                                 </td>
                             </tr>
                         </tbody>

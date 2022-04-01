@@ -1,62 +1,36 @@
 .adm {
-    background-color: var(--cor3);
-    margin:0 auto;
-    max-width: 1200px;
-    border-radius: 0 0 0 80px;
+    width: 1200px;
+    margin: 0 auto; 
+    background-color: var(--cor0);
+    border-radius: 80px 0 80px 0;
+    margin-bottom: 80px;
+    height: 50vh;
 }
 
-.title-adm {
-    color: var(--cor4);
-    text-align: center;
-    padding: 30px;
+.btn-adm-top {
+    margin-top: 13vh;
 }
 
-table {
+.btns-adm {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.label-adm {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-}
-
-.lbl1 {
-    margin-top: 0;
-}
-
-.lbl {
-    margin-top: 18px;
-    padding: 5px;
-}
-
-.input-adm {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
+    margin-top: 30px;
 }
 
 .btn-adm {
-    background-color: var(--cor5);
+    background-color: var(--cor3);
     border: none;
     border-radius: 10px;
-    padding: 15px 0;
+    padding: 10px 0;
     margin-top: 10px;
     color: var(--cor4);
-    width: 250px;
+    width: 300px;
     cursor: pointer;
 }
 
-.btn-cadastroOng {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+.btn-adm-top {
+    margin-top: 15vh;
 }
 
 @media screen and (max-width: 1200px) {
