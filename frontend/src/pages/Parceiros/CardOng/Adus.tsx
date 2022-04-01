@@ -29,7 +29,7 @@ const Adus = () => {
                 </p>
             </div>
             <div className="map-ong">
-                <h3>{t('title9')}</h3>
+                <h1 className="title-parceiros">{t('title9')}</h1>
                 <img className="map-img" src={adusMap} alt="Logo Adus" />
             </div>
         </section>

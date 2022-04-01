@@ -65,6 +65,18 @@
     
 }
 
+@media screen and (max-width: 1200px) {
+
+    .login {
+        width: 100%;
+    }
+
+    .img-login {
+        width: 500px;
+        max-height: auto;
+    }
+}
+
 @media screen and (max-width: 1000px) {
 
     .login {

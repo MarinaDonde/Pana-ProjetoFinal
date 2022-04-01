@@ -58,16 +58,12 @@ const Login = () => {
           </p>
 
           <div className="div-login">
-          <Link to="/Adm">
-            <button type="submit" className="btn-login">
-              Entrar
-            </button>
-          </Link>
+            <Link to="/adm">
+              <button type="submit" className="btn-login">
+                Entrar
+              </button>
+            </Link>
           </div>
-
-
-
-
         </form>
       </div>
     </section>

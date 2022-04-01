@@ -28,7 +28,7 @@ const MissaoPaz = () => {
                 </p>
             </div>
             <div className="map-ong">
-                <h3>{t('title9')}</h3>
+                <h1 className="title-parceiros">{t('title9')}</h1>
                 <img className="map-img" src={missaoPazMap} alt="Logo missaoPaz" />
             </div>
         </section>

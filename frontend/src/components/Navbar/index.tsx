@@ -25,19 +25,19 @@ const Navbar = () => {
               </li>
               <li>
                 <BsInfoSquare />
-                <Link to="Cultura"> {t('nav2')}</Link>
+                <Link to="cultura"> {t('nav2')}</Link>
               </li>
               <li>
                 <BsPeople />
-                <Link to="Parceiros">{t('nav3')}</Link>
+                <Link to="parceiros">{t('nav3')}</Link>
               </li>
               <li>
                 <GrContact />
-                <Link to="Contato">{t('nav4')}</Link>
+                <Link to="contato">{t('nav4')}</Link>
               </li>
               <li>
                 <RiContactsLine />
-                <Link to="Login">{t('nav5')}</Link>
+                <Link to="login">{t('nav5')}</Link>
               </li>
             </ul>
           </div>

@@ -26,6 +26,10 @@ a, a:hover {
   color: unset;
 }
 
+h1 {
+  font-size: 1.5em;
+}
+
 p {
   color: var(--cor6);
 }

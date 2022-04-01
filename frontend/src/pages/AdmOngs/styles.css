@@ -1,0 +1,40 @@
+html, body {
+	height: 100%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--var1);
+    margin-bottom: 40px;
+}
+
+table {
+	max-width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+    border-radius: 10px 0 10px 0;
+}
+
+th, td {
+	padding: 10px;
+	background-color: rgba(255,255,255,0.2);
+	color: var(--cor3);
+}
+
+th {
+	text-align: left;
+    color: var(--cor5);
+}
+
+td {
+    position: relative;
+}
+
+.btn-excluir {
+    cursor: pointer;
+}
+
+

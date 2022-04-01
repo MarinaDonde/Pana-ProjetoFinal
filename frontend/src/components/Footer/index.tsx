@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="container">
                 <div className="logo-footer">
                     <Link to="/">
-                        <img src={logo} alt="Pana" />
+                        <img src={logo} alt="Pana" className="logo-size" />
                     </Link>   
                     <p>© Pana - Refugiados - Squad 27  Recode 2022</p>              
                 </div>   

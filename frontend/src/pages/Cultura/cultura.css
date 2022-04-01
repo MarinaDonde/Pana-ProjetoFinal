@@ -18,12 +18,21 @@
 p {
     font-size: 0.8em;
     text-align: justify;
-    padding: 10px;
+    padding: 8px;
+
 }
 
 h3 {
     padding: 10px;
     color: var(--cor3);
+}
+
+@media screen and (max-width: 1200px) {
+
+    .cultura {
+        width: 100%;
+        max-height: 500px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -49,6 +58,10 @@ h3 {
 
     .img-cultura {
         display: none;
+    }
+
+    h3 {
+        padding:  0 10px;
     }
 }
 

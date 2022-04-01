@@ -29,6 +29,25 @@ h1 {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 1200px) {
+
+    .img-home {
+        width: 100%;
+    }
+
+    .home {
+        width: 100%;
+        margin: 0 auto;      
+    }
+
+    .text {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
 
     .img-home {
