@@ -16,7 +16,7 @@ class OngService {
     }
 
     updateOng(id, ong) {
-        return axios.put(baseURL + "/ongs/" + id);
+        return axios.put(baseURL + "/ongs/" + id, ong);
     }
 
     deleteOng(id) {

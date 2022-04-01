@@ -1,9 +1,8 @@
 import { useRef } from 'react';
 import api from 'services/api';
-import contato from '../../img/contato.png'
+import contato from '../../img/contato.png';
 import { useTranslation } from 'react-i18next';
-import './contato.css'
-
+import './contato.css';
 
 const Contato = () => {
 
