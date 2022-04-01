@@ -19,7 +19,7 @@ import com.projetofinal.pana.services.ContatoService;
 
 @RestController
 @RequestMapping(value = "/contatos")
-//@CrossOrigin(origins = "https://refugiopana.netlify.app/")
+@CrossOrigin(origins = "http://localhost:3000")
 public class ContatoController {
 
 	@Autowired

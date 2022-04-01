@@ -13,6 +13,7 @@ public class Ong {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	private String nome;
 	private String logourl;
 	private String sobre;
 	private String fburl;
@@ -23,8 +24,9 @@ public class Ong {
 		
 	}
 
-	public Ong(Long id, String logourl, String sobre, String fburl, String instaurl, String mapaurl) {
+	public Ong(Long id, String nome,String logourl, String sobre, String fburl, String instaurl, String mapaurl) {
 		this.id = id;
+		this.nome = nome;
 		this.logourl = logourl;
 		this.sobre = sobre;
 		this.fburl = fburl;
@@ -38,6 +40,14 @@ public class Ong {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public String getLogourl() {
