@@ -7,6 +7,7 @@ const Text = () => {
   return (
       <section className="text">
         <h1>{t('title1')} </h1>
+        <p>testando</p>
         <p>{t('par01')}</p>
         <p>{t('par02')}</p>
         <p>{t('par03')}</p>
