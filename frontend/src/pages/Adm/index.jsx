@@ -8,7 +8,7 @@ const Adm = () => {
       <div className="btns-adm">
         <Link to="/cadastrar">
           <button type="submit" className="btn-adm btn-adm-top">
-            Cadastrar Ong
+            Cadastrar Parceiro
           </button>
         </Link>
         <Link to="/listaOngs">

@@ -3,7 +3,6 @@ import Navbar from 'components/Navbar';
 import Adm from 'pages/Adm';
 import ListaContato from 'pages/AdmContatos/listaContato';
 import CadastrarOng from 'pages/AdmOngs/cadastrarOng';
-import Editar from 'pages/AdmOngs/editar';
 import ListaOng from 'pages/AdmOngs/listaOngs';
 import Contato from 'pages/Contato';
 import Cultura from 'pages/Cultura';
@@ -27,7 +26,6 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/adm" element={<Adm />} />
           <Route path="/cadastrar" element={<CadastrarOng />} />
-          <Route path="/ongs" element={<Editar />} />
           <Route path="/listaContatos" element={<ListaContato />} />
           <Route path="/listaOngs" element={<ListaOng />} />
         </Routes>
