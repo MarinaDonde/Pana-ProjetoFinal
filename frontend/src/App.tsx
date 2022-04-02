@@ -26,8 +26,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/adm" element={<Adm />} />
           <Route path="/cadastrar" element={<CadastrarOng />} />
-          <Route path="/listaContatos" element={<ListaContato />} />
-          <Route path="/listaOngs" element={<ListaOng />} />
+          <Route path="/contatos" element={<ListaContato />} />
+          <Route path="/ongs" element={<ListaOng />} />
         </Routes>
         <Footer />
       </BrowserRouter>
