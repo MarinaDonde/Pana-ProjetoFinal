@@ -91,7 +91,7 @@ const ListaContato = () => {
                         Cadastrar Ong
                     </button>
                 </Link>
-                <Link to="/listaOngs">
+                <Link to="/ongs">
                     <button type="submit" className="btn-adm">
                         Lista de Parceiros
                     </button>

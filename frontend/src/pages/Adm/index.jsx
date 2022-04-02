@@ -11,12 +11,12 @@ const Adm = () => {
             Cadastrar Parceiro
           </button>
         </Link>
-        <Link to="/listaOngs">
+        <Link to="/ongs">
           <button type="submit" className="btn-adm">
             Lista de Parceiros
           </button>
         </Link>
-        <Link to="/listaContatos">
+        <Link to="/contatos">
           <button type="submit" className="btn-adm">
             Mensagens Recebidas
           </button>
