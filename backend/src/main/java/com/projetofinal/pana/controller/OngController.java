@@ -19,7 +19,7 @@ import com.projetofinal.pana.services.OngService;
 
 @RestController
 @RequestMapping(value = "/ongs")
-@CrossOrigin(origins = "http://localhost:3000/ongs/")
+@CrossOrigin(origins = "https://projetopana.netlify.app/ongs")
 public class OngController {
 	
 	@Autowired
