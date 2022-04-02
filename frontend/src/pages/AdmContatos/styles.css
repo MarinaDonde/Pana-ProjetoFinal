@@ -5,6 +5,7 @@
     justify-content: center;
     background-color: var(--var1);
     min-height: 50vh;
+    margin-bottom: 50px;
 }
 
 .section-title {
@@ -30,11 +31,10 @@ th {
     color: var(--cor5);
 }
 
-
-
 .btn-excluir {
     cursor: pointer;
 }
+
 
 @media screen and (max-width: 1300px) {
 

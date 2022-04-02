@@ -1,42 +1,86 @@
 import { useRef } from 'react'
+import { Link } from 'react-router-dom';
 import api from 'services/api';
+import './styles.css'
 
 const CadastrarOng = () => {
 
-    const nome = useRef();
-    const logourl = useRef();
-    const sobre = useRef();
-    const fburl = useRef();
-    const instaurl = useRef();
-    const mapaurl = useRef();
+  const nome = useRef();
+  const logourl = useRef();
+  const sobre = useRef();
+  const fburl = useRef();
+  const instaurl = useRef();
+  const mapaurl = useRef();
 
-    function enviarDados(event) {
-        event.preventDefault();
-        api.post('/ongs', {
-            nome: nome.current.value,
-            logourl: logourl.current.value,
-            sobre: sobre.current.value,
-            fburl: fburl.current.value,
-            instaurl: instaurl.current.value,
-            mapaurl: mapaurl.current.value,
+  function enviarDados(event) {
+    event.preventDefault();
+    api.post('/ongs', {
+      nome: nome.current.value,
+      logourl: logourl.current.value,
+      sobre: sobre.current.value,
+      fburl: fburl.current.value,
+      instaurl: instaurl.current.value,
+      mapaurl: mapaurl.current.value,
 
-        }).then((res) => console.log(res.data)).catch((err) => console.log(err))
-        window.location.reload();
-    }
+    }).then((res) => console.log(res.data)).catch((err) => console.log(err))
+    window.location.reload();
+  }
 
   return (
-    <div className="contato-form">
-    <form className="form" onSubmit={enviarDados}>
-      <h1>Cadastrar</h1>
-      <input type="text" className="form-control" ref={nome}></input>
-      <input type="text" className="form-control" ref={logourl}></input>
-      <input type="text" className="form-control" ref={sobre}></input>
-      <input type="text" className="form-control" ref={fburl}></input>
-      <input type="text" className="form-control" ref={instaurl}></input>
-      <input type="text" className="form-control" ref={mapaurl}></input>
-      <button type="submit" className="btn-contato">Enviar</button>
-    </form>
-  </div>
+    <>
+      <div className="contato-form">
+        <form className="form-ong" onSubmit={enviarDados}>
+          <h1 className="title-ong">Cadastrar Ong Parceira:</h1>
+          <div className="ong-items">
+            <div>
+              <div className="container-input">
+                <label className="ong-label">Nome:
+                  <input type="text" className="ong-control" ref={nome}></input>
+                </label>
+              </div>
+              <div className="container-input">
+                <label className="ong-label">URL Logo:
+                  <input type="text" className="ong-control" ref={logourl}></input>
+                </label>
+              </div>
+              <div className="container-input">
+                <label className="ong-label">Sobre:
+                  <input type="text" className="ong-control" ref={sobre}></input>
+                </label>
+              </div>
+              <div className="container-input">
+                <label className="ong-label">URL Facebook:
+                  <input type="text" className="ong-control" ref={fburl}></input>
+                </label>
+              </div>
+              <div className="container-input">
+                <label className="ong-label">URL Instagram:
+                  <input type="text" className="ong-control" ref={instaurl}></input>
+                </label>
+              </div>
+              <div className="container-input">
+                <label className="ong-label">URL Mapa:
+                  <input type="text" className="ong-control" ref={mapaurl}></input>
+                </label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" className="btn-ong">Enviar</button>
+        </form>
+      </div>
+      <div className="btns-adm">
+        <Link to="/cadastrar">
+          <button type="submit" className="btn-adm">
+            Cadastrar Ong
+          </button>
+        </Link>
+        <Link to="/listaOngs">
+          <button type="submit" className="btn-adm">
+            Lista de Parceiros
+          </button>
+        </Link>
+      </div>
+    </>
   )
 }
 

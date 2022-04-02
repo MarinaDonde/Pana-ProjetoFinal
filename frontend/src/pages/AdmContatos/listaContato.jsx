@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaTrashAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import api from "services/api";
 import ContatoService from "services/ContatoService";
 import './styles.css'
@@ -84,6 +85,18 @@ const ListaContato = () => {
                     </table>
                 </div>
             ))}
+            <div className="btns-adm">
+                <Link to="/cadastrar">
+                    <button type="submit" className="btn-adm btn-adm-top">
+                        Cadastrar Ong
+                    </button>
+                </Link>
+                <Link to="/listaOngs">
+                    <button type="submit" className="btn-adm">
+                        Lista de Parceiros
+                    </button>
+                </Link>
+            </div>
         </section>
     )
 }

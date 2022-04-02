@@ -1,40 +1,66 @@
-html, body {
-	height: 100%;
+.title-ong {
+    margin-bottom: 30px;
 }
 
-.section {
+.form-ong {
+    width: 520px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: var(--var1);
-    margin-bottom: 40px;
+    margin: 0 30px;
 }
 
-table {
-	max-width: 800px;
-	border-collapse: collapse;
-	overflow: hidden;
-    border-radius: 10px 0 10px 0;
+.ong-items {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-th, td {
-	padding: 10px;
-	background-color: rgba(255,255,255,0.2);
-	color: var(--cor3);
+.ong-control {
+    background-color: var(--cor1);
+    border-bottom: 2px solid var(--cor3);
+    border-radius: 0;
+    width: 380px;
+    float: right;
+    margin-bottom: 15px;
+    outline: none;
 }
 
-th {
-	text-align: left;
-    color: var(--cor5);
+.ong-label {
+    float: right;
+    font-size: 0.8em;
 }
 
-td {
-    position: relative;
-}
-
-.btn-excluir {
+.btn-ong {
+    width: 300px;
+    background-color: var(--cor3);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-top: 10px;
+    color: var(--cor4);
     cursor: pointer;
 }
+
+.btns-adm {
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .form-ong {
+        width: 350px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .form-ong {
+        width: 250px;
+    }
+}
+
+
+
 
 
