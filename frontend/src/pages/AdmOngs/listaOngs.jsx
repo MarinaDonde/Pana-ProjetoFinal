@@ -87,7 +87,7 @@ const ListaOng = () => {
                         Cadastrar Parceiro
                     </button>
                 </Link>
-                <Link to="/contatos">
+                <Link to="/contatos/">
                     <button type="submit" className="btn-adm">
                         Mensagens Recebidas
                     </button>

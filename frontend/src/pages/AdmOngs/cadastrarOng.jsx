@@ -69,12 +69,12 @@ const CadastrarOng = () => {
         </form>
       </div>
       <div className="btns-adm">
-        <Link to="/ongs">
+        <Link to="/ongs/">
           <button type="submit" className="btn-adm">
             Lista de Parceiros
           </button>
         </Link>
-        <Link to="/contatos">
+        <Link to="/contatos/">
           <button type="submit" className="btn-adm">
             Mensagens Recebidas
           </button>

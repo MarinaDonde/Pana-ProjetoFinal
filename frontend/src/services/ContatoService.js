@@ -8,7 +8,7 @@ class ContatoService {
     }
 
     createContato(contato) {
-        return axios.post(baseURL + "/contatos/");
+        return axios.post(baseURL + contato);
     }
 
     getContatoById(id) {
@@ -16,11 +16,11 @@ class ContatoService {
     }
 
     updateContato(id, contato) {
-        return axios.put(baseURL + "/contatos/");
+        return axios.put(baseURL + "/contatos/" + id, contato);
     }
 
     deleteContato(id) {
-        return axios.delete(baseURL + "/contatos/");
+        return axios.delete(baseURL + "/contatos/" + id);
     }
 }
 
