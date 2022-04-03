@@ -4,12 +4,12 @@
 
 Recode - Entrega Final do Projeto Pana
 
-🎯 Objetivo: Refatorar o projeto anterior, construindo uma API em SpringBoot integrada com React (MVC). </br>
+🎯 Objetivo: Refatorar o projeto anterior(feito em Bootstrap e C#), construindo uma API em SpringBoot integrada com React (MVC). </br>
 🔗 Link da aplicação: ➡️ https://projetopana.netlify.app
 
 O projeto Pana foi construído em 4 idiomas diferentes para atender a todos os refugiados que chegam ao Brasil.
 
-A proposta é aprensentar brevemente a cultura brasileira, e o mais importante, informar ONGs Brasileiras que auxiliam os refugiados nas necessidades mais básicas, como:
+A proposta é apresentar brevemente a cultura brasileira, e o mais importante, informar ao nosso público as ONGs Brasileiras que auxiliam os refugiados nas necessidades mais básicas, como:
 alimentação, moradia, documentação, ensino da língua portuguesa e até capacitação profissional, etc.
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/MarinaDonde/Pana-ProjetoFinal)
