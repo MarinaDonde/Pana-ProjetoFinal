@@ -23,6 +23,7 @@ const CadastrarOng = () => {
       mapaurl: mapaurl.current.value,
 
     }).then((res) => console.log(res.data)).catch((err) => console.log(err))
+    window.alert("Parceiro cadastrado com sucesso!")
     window.location.reload();
   }
 

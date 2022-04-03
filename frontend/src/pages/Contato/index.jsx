@@ -27,6 +27,7 @@ const Contato = () => {
       mensagem: mensagem.current.value,
       
     }).then((res) => console.log(res.data)).catch((err) => console.log(err))
+    window.alert("Obrigado pelo contato!")
     window.location.reload();
   }
 
