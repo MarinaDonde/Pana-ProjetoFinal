@@ -5,7 +5,10 @@
 Recode - Entrega Final do Projeto Pana
 
 🎯 Objetivo: Refatorar o projeto anterior(feito em Bootstrap e C#), construindo uma API em SpringBoot integrada com React (MVC). </br>
+
+
 🔗 Link da aplicação: ➡️ https://projetopana.netlify.app
+### Atenção: a parte armazenada no banco de dados demora cerca de 1 min pra ser carregado.
 
 O projeto Pana foi construído em 4 idiomas diferentes para atender a todos os refugiados que chegam ao Brasil.
 
