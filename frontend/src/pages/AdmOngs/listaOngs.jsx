@@ -13,7 +13,7 @@ const ListaOng = () => {
 
     useEffect(() => {
         api
-            .get("/ongs")
+            .get("/ongs/")
             .then((response) => {
                 setOngs(response.data);
                 console.log(response);
