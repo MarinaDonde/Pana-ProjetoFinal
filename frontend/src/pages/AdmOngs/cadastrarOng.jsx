@@ -14,7 +14,7 @@ const CadastrarOng = () => {
 
   function enviarDados(event) {
     event.preventDefault();
-    api.post("/ongs/", {
+    api.put("/ongs/", {
       nome: nome.current.value,
       logourl: logourl.current.value,
       sobre: sobre.current.value,
