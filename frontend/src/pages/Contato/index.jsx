@@ -17,7 +17,7 @@ const Contato = () => {
 
   function enviarDados(event) {
     event.preventDefault();
-    api.post("/contatos/", {
+    api.post('/contatos/', {
       nome: nome.current.value,
       sobrenome: sobrenome.current.value,
       pais: pais.current.value,

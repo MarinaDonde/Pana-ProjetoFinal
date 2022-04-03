@@ -10,7 +10,7 @@ const ListaContato = () => {
 
     useEffect(() => {
         api
-            .get("/contatos")
+            .get("/contatos/")
             .then((response) => {
                 setContatos(response.data);
                 console.log(response);
